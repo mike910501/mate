@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcción de Relaciones Matemáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construcción de Relaciones Matemáticas</h1>
+        <div class="input-group">
+            <label for="setInput">Conjunto S:</label>
+            <input type="text" id="setInput" placeholder="Ej. 1, 2, 3" />
+        </div>
+        <div class="relation-builder">
+            <h3>Construir Relación:</h3>
+            <p id="relation"></p>
+            <div class="buttons">
+                <button onclick="addToRelation('x')">x</button>
+                <button onclick="addToRelation('y')">y</button>
+                <button onclick="addToRelation('=')">=</button>
+                <button onclick="addToRelation('>')">></button>
+                <button onclick="addToRelation('<')"><</button>
+                <button onclick="addToRelation('>=')">≥</button>
+                <button onclick="addToRelation('<=')">≤</button>
+                <button onclick="addToRelation('+')">+</button>
+                <button onclick="addToRelation('-')">-</button>
+                <button onclick="addToRelation('*')">*</button>
+                <button onclick="addToRelation('/')">/</button>
+            </div>
+            <button class="generate-button" onclick="generatePairs()">Verificar y Generar Pares Ordenados</button>
+            <button class="clear-button" onclick="clearFields()">Limpiar</button>
+        </div>
+        <div class="results">
+            <h3>Pares Ordenados:</h3>
+            <p id="orderedPairs"></p>
+            <h3>Propiedades de la Relación:</h3>
+            <p id="properties"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
